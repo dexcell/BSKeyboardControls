@@ -61,15 +61,15 @@
             [self.segmentedControl addTarget:self action:@selector(segmentedControlValueChanged:) forControlEvents:UIControlEventValueChanged];
             
             [self.segmentedControl setMomentary:YES];
-            [self.segmentedControl setSegmentedControlStyle:UISegmentedControlStyleBar];
+            //[self.segmentedControl setSegmentedControlStyle:UISegmentedControlStyleBar];
             [self.segmentedControl setEnabled:NO forSegmentAtIndex:BSKeyboardControlsDirectionPrevious];
             [self.segmentedControl setEnabled:NO forSegmentAtIndex:BSKeyboardControlsDirectionNext];
             [self setSegmentedControlItem:[[UIBarButtonItem alloc] initWithCustomView:self.segmentedControl]];
         }
 		#else
-		[self setLeftArrowButton:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:105 target:self action:@selector(selectPreviousField)]];
+		[self setLeftArrowButton:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:103 target:self action:@selector(selectPreviousField)]];
 		[self.leftArrowButton setEnabled:NO];
-        [self setRightArrowButton:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:106 target:self action:@selector(selectNextField)]];
+        [self setRightArrowButton:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:104 target:self action:@selector(selectNextField)]];
 		[self.rightArrowButton setEnabled:NO];
 		#endif
         
