@@ -316,7 +316,7 @@
         if (self.visibleControls & BSKeyboardControlPreviousNext)
         {
             UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-            fixedSpace.width = 22.0;
+            fixedSpace.width = 10.0;
             [items addObjectsFromArray:@[self.leftArrowButton,
                                          fixedSpace,
                                          self.rightArrowButton]];
